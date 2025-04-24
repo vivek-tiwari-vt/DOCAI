@@ -35,7 +35,7 @@ This project investigates the effectiveness of the NdLinear layer within Transfo
 - **NdLinear**: ~0.80
 
 #### 3. Precision & Recall
-![Precision & Recall](visualizations\precision_recall.png)
+![Precision & Recall](visualizations/precision_recall.png)
 - **NNLinear**: Precision ~0.80+, Recall ~0.75
 - **NdLinear**: Precision ~0.80, Recall ~0.77+
 
@@ -45,7 +45,7 @@ This project investigates the effectiveness of the NdLinear layer within Transfo
 - **NdLinear**: 0.80-0.85
 
 #### 5. Inference Speed
-![Inference Speed](visualizations\inference_speed.png)
+![Inference Speed](visualizations/inference_speed.png)
 - **NNLinear**: ~50ms/sample
 - **NdLinear**: 35-40ms/sample
 
@@ -56,7 +56,7 @@ This project investigates the effectiveness of the NdLinear layer within Transfo
 
 
 #### 7. Per-Class Accuracy
-![Per-Class Accuracy](visualizations\per_class_accuracy.png)
+![Per-Class Accuracy](visualizations/per_class_accuracy.png)
 - Shows 2-5% improvement for NdLinear across all classes
 
 ### Recommendation
