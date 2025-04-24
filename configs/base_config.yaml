@@ -1,0 +1,7 @@
+## File: configs/base_config.yaml
+seed: 42
+dataset_name: nielsr/funsd
+data_dir: data/raw/funsd
+results_dir: results
+num_labels: 8
+max_seq_length: 512
