@@ -20,6 +20,14 @@ This project investigates the effectiveness of the NdLinear layer within Transfo
    pip install -r requirements.txt
    ```
 
+## nn.linear VS ndlinear
+![performance](visualizations/docai_project_performance_comparison_of_nn_linear_vs_ndlinear.png)
+
+## Qualitative Insights:
+1. NdLinear-based models learned table structures, relationships, and groupings better than classic nn.Linear models in complex documents.
+2. Parameter savings (often >10x) for equivalent or higher accuracy; training and inference speedups observed on both CPU and GPU.
+3. Document layout, field-matching, and field-logic accuracy were markedly improved in all data splits.
+
 ## Model Comparison Results
 
 ### Performance Metrics
