@@ -1,0 +1,13 @@
+_base_: base_config.yaml
+model_checkpoint: microsoft/layoutlm-base-uncased
+training_args:
+  batch_size: 8
+  learning_rate: 5e-5
+  epochs: 10
+  optimizer: adamw
+  scheduler: cosine
+output_dir: results/ndlinear_ffn_layoutlm
+data_dir: /Volumes/DATA/project1/data/raw/funsd
+ndlinear_params:
+  hidden_dim: 3072
+num_labels: 5 # Number of entity types in FUNSD dataset

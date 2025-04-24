@@ -1,0 +1,12 @@
+_base_: base_config.yaml
+model_checkpoint: microsoft/layoutlm-base-uncased
+data_dir: data/raw/funsd
+max_seq_length: 512  # Explicitly set the max sequence length
+training_args:
+  batch_size: 8
+  learning_rate: 3e-5
+  epochs: 10
+  optimizer: adamw
+  scheduler: linear
+output_dir: results/baseline_layoutlm
+seed: 42  # Added seed parameter

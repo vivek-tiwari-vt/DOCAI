@@ -1,0 +1,14 @@
+_base_: base_config.yaml
+model_checkpoint: microsoft/layoutlm-base-uncased
+training_args:
+  batch_size: 4
+  learning_rate: 1e-4
+  epochs: 5
+  optimizer: adamw
+  scheduler: cosine
+output_dir: results/layout_monde
+moe_params:
+  num_experts: 4
+  top_k: 2
+ndlinear_params:
+  hidden_dim: 3072
